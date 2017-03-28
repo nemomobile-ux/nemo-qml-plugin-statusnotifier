@@ -7,11 +7,12 @@ Version:    1.0.0
 Release:    1
 Group:      System/Libraries
 License:    LGPLv2.1+
-URL:        https://github.com/coderus/nemo-qml-plugin-statusnotifier
+URL:        https://github.com/nemomobile-ux/nemo-qml-plugin-statusnotifier
 Source0:    %{name}-%{version}.tar.bz2
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5DBus)
+BuildRequires:  pkgconfig(Qt5Quick)
 
 %description
 Declarative plugin for StatusNotifier. Contains both Host and Item
