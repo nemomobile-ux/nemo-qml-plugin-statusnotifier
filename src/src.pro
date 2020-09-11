@@ -6,8 +6,8 @@ QT += qml dbus gui
 
 CONFIG += c++11
 
-system(qdbusxml2cpp -c StatusNotifierItemInterface -p statusnotifieriteminterface -i dbustypes.h ../dbus/org.kde.StatusNotifierItem.xml)
-system(qdbusxml2cpp ../dbus/org.kde.StatusNotifierItem.xml -i statusnotifieritem.h -a statusnotifieritemadaptor)
+system($$[QT_INSTALL_BINS]/qdbusxml2cpp -c StatusNotifierItemInterface -p statusnotifieriteminterface -i dbustypes.h ../dbus/org.kde.StatusNotifierItem.xml)
+system($$[QT_INSTALL_BINS]/qdbusxml2cpp ../dbus/org.kde.StatusNotifierItem.xml -i statusnotifieritem.h -a statusnotifieritemadaptor)
 
 SOURCES += \
     statusnotifieriteminterface.cpp \
